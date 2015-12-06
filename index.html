@@ -28,6 +28,7 @@
         <!--- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/funciones.js"></script>
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -39,50 +40,8 @@
     </head>
     <body>
 
-    <!--<div id="option-panel">
-        <div id="option-panel-wrapper">
-            <div id="option-panel-btn"></div><!-- End #option-panel-btn -->
-           
-       <!-- <div id="option-panel-container">
-            <ul id="option-panel-tabs-container" class="clearfix">
-                <li class="active"><a href="#panel-layout" data-toggle="tab" data-panel-title="Layout"></a></li>
-                <li><a href="#panel-home" data-toggle="tab" data-panel-title="Background Settings"></a></li>
-                <li><a href="#panel-color" data-toggle="tab" data-panel-title="Color Settings" ></a></li>
-                <li><a href="#panel-font" data-toggle="tab" data-panel-title="Font Settings"></a></li>
-                <li><a id="option-close" href="#"></a></li>
-            </ul>
-          
-          <!--  <div id="option-panel-title" class="clearfix">
-                <span>Layout</span>
-                <a href="#" id="option-panel-reset">Reset</a>
-            </div> -->
-
             <div id="option-panel-content" class="tab-content">
-              <!--  <div class="tab-pane fade in active" id="panel-layout">
-                    <div id="panel-option-layout" class="panel-group custom-accordion sm-accordion">
-                        <div class="panel">
-                                <div class="accordion-header">
-                                    <div class="accordion-title"><span>Layout</span></div><!-- End .accordion-title -->
-                 
-                   <!--     <a class="accordion-btn opened"  data-toggle="collapse" data-target="#document-layout" data-parent="#panel-option-layout"></a>
-                                </div><!-- End .accordion-header -->
-                             
-                        <!--    <div id="document-layout" class="collapse in">
-                                <div class="panel-body">
-                                    <ul class="layout-style-list clearfix">
-                                        <li data-layout="fullwidth"><img src="images/panel/fullwidth.png" alt="Fullwidth">
-                                            <p>Fullwidth</p></li>
-                                        <li data-layout="boxed"><img src="images/panel/boxed.png" alt="Boxed">
-                                            <p>Boxed</p></li>
-                                    </ul>
-                                </div><!-- End .panel-body -->
-                   <!--        </div><!-- #collapse -->
-                    <!--    </div><!-- End .panel -->
-                     
-                 <!--   </div><!-- .panel-group -->
-             <!-- </div>    <!-- End .tab-pane -->  
-
-
+            
                 <div class="tab-pane fade" id="panel-home">
                     <div id="panel-home-accordion" class="panel-group custom-accordion sm-accordion">
                         <div class="panel">
@@ -146,145 +105,9 @@
                         </div><!-- End .panel -->
                     </div><!-- .panel-group -->
                 </div><!-- End .tab-pane -->
-                
-             <!--   <div class="tab-pane fade" id="panel-color">
-                    <div id="panel-color-accordion" class="panel-group custom-accordion sm-accordion">
-                    <div class="panel">
-                            <div class="accordion-header">
-                                <div class="accordion-title"><span>Green Mode</span></div><!-- End .accordion-title -->
-                 <!--               <a class="accordion-btn opened"  data-toggle="collapse"  data-target="#color-mode" data-parent="#panel-color-accordion"></a>
-                            </div><!-- End .accordion-header -->
-<!--
-                        <ul class="colorbox-list clearfix collapse in" id="color-mode">
-                            <li>
-                                <div class="color-box first-color">
-                                    <span></span>
-                                </div>
-                                <p>First Color</p>
-                            </li>
-                            <li>
-                                <div class="color-box second-color">
-                                    <span></span>
-                                </div>
-                                <p>Second Color</p>
-                            </li>
-                            <li>
-                                <div class="color-box third-color">
-                                    <span></span>
-                                </div>
-                                <p>Third Color</p>
-                            </li>
-                            <li>
-                                <div class="color-box fourth-color">
-                                    <span></span>
-                                </div>
-                                <p>Fourth Color</p>
-                            </li>
-                        </ul>
-                    </div><!-- .panel -->
-           <!--     </div><!-- #panel-color-accordion -->
-            <!--    </div><!-- End .tab-pane -->
-
-
-                <!--<div class="tab-pane fade" id="panel-font">
-                     <div id="panel-font-accordion" class="panel-group custom-accordion sm-accordion">
-                        <div class="panel">
-                            <div class="accordion-header">
-                                <div class="accordion-title"><span>First Font</span></div><!-- End .accordion-title -->
-                    <!--            <a class="accordion-btn opened"  data-toggle="collapse"  data-target="#first-font-container" data-parent="#panel-font-accordion"></a>
-                            </div><!-- End .accordion-header -->
-                        <!--    <div class="collapse in" id="first-font-container">
-                                <select class="form-control" name="first-font" id="first-font">
-                                    <option value="Arial">Arial</option>
-                                    <option value="Open Sans">Open Sans</option>
-                                    <option value="PT Sans">PT Sans</option>
-                                    <option value="Lato">Lato</option>
-                                    <option value="Roboto">Roboto</option>
-                                    <option value="Droid Sans">Droid Sans</option>
-                                    <option value="Ubuntu">Ubuntu</option>
-                                    <option value="Arvo">Arvo</option>
-                                    <option value="Droid Serif">Ubuntu</option>
-                                    <option value="Nunito">Nunito</option>
-                                </select>
-                            </div><!-- End #first-font-container -->
-                        <!--</div><!-- .panel -->
-                        
-                  <!--      <div class="panel">
-                            <div class="accordion-header">
-                                <div class="accordion-title"><span>Second Font</span></div><!-- End .accordion-title -->
-                      <!--          <a class="accordion-btn"  data-toggle="collapse"  data-target="#second-font-container" data-parent="#panel-font-accordion"></a>
-                            </div><!-- End .accordion-header -->
-                       <!--     <div class="collapse" id="second-font-container">
-                                <select class="form-control" name="second-font" id="second-font">
-                                    <option value="Oswald">Oswald</option>
-                                    <option value="Gudea">Gudea</option>
-                                    <option value="Open Sans">Open Sans</option>
-                                    <option value="PT Sans">PT Sans</option>
-                                    <option value="Lato">Lato</option>
-                                    <option value="Roboto">Roboto</option>
-                                    <option value="Droid Sans">Droid Sans</option>
-                                    <option value="Ubuntu">Ubuntu</option>
-                                    <option value="Arvo">Arvo</option>
-                                    <option value="Droid Serif">Droid Serif</option>
-                                    <option value="Nunito">Nunito</option>
-                                </select>
-                            </div><!-- End #second-font-container -->
-                    <!--    </div><!-- .panel -->
-
-                    <!--    <div class="panel">
-                            <div class="accordion-header">
-                                <div class="accordion-title"><span>Third Font</span></div><!-- End .accordion-title -->
-                    <!--            <a class="accordion-btn"  data-toggle="collapse"  data-target="#third-font-container" data-parent="#panel-font-accordion"></a>
-                            </div><!-- End .accordion-header -->
-                     <!--       <div class="collapse" id="third-font-container">
-                                <select class="form-control" name="third-font" id="third-font">
-                                    <option value="PT Sans">PT Sans</option>
-                                    <option value="Gudea">Gudea</option>
-                                    <option value="Open Sans">Open Sans</option>
-                                    <option value="Lato">Lato</option>
-                                    <option value="Roboto">Roboto</option>
-                                    <option value="Droid Sans">Droid Sans</option>
-                                    <option value="Ubuntu">Ubuntu</option>
-                                    <option value="Arvo">Arvo</option>
-                                    <option value="Droid Serif">Droid Serif</option>
-                                    <option value="Nunito">Nunito</option>
-                                </select>
-                            </div><!-- End #third-font-container -->
-                   <!--     </div><!-- .panel -->
-                       <!--  <div class="panel">
-                            <div class="accordion-header">
-                                <div class="accordion-title"><span>Fourth Font</span></div><!-- End .accordion-title -->
-                           <!--     <a class="accordion-btn"  data-toggle="collapse"  data-target="#fourth-font-container" data-parent="#panel-font-accordion"></a>
-                            </div><!-- End .accordion-header -->
-                        <!--    <div class="collapse" id="fourth-font-container">
-                                <select class="form-control" name="fourth-font" id="fourth-font">
-                                    <option value="Gudea">Gudea</option>
-                                    <option value="Open Sans">Open Sans</option>
-                                    <option value="PT Sans">PT Sans</option>
-                                    <option value="Lato">Lato</option>
-                                    <option value="Roboto">Roboto</option>
-                                    <option value="Droid Sans">Droid Sans</option>
-                                    <option value="Ubuntu">Ubuntu</option>
-                                    <option value="Arvo">Arvo</option>
-                                    <option value="Droid Serif">Droid Serif</option>
-                                    <option value="Nunito">Nunito</option>
-                                </select>
-                            </div><!-- End #fourth-font-container -->
-                    <!--    </div><!-- .panel -->
-
-                  <!--  </div><!-- End .panel-font-accordion -->
-             <!--   </div><!-- End .tab-pane -->
-         <!--   </div><!-- End .tab-content -->
-      <!--  </div><!-- End #option-panel-container -->
             
 
-      <!--  </div><!-- End #option-panel-wrapper -->
-        
-   <!-- </div><!-- End #option panel -->
-
     <div id="wrapper">
-	
-	
     	<header id="header">
     		<div id="header-top">
     			<div class="container">
@@ -292,7 +115,7 @@
                         <div class="col-md-12">
         					<div class="header-top-left">
         						<ul id="top-links" class="clearfix">
-        							<!--<li><a href="#" title="My Wishlist"><span class="top-icon top-icon-pencil"></span><span class="hide-for-xs">My Wishlist</span></a></li>-->
+        						
         							<li><a href="#" title="My Account"><span class="top-icon top-icon-user"></span><span class="hide-for-xs">Mi Cuenta</span></a></li>
         							<li><a href="cart.html" title="My Cart"><span class="top-icon top-icon-cart"></span><span class="hide-for-xs">Mi Carrito</span></a></li>
         							<li><a href="checkout.html" title="Checkout"><span class="top-icon top-icon-check"></span><span class="hide-for-xs">Checkout</span></a></li>
@@ -302,7 +125,7 @@
     							
     							<div class="header-text-container pull-right">
     								<p class="header-text">Bienvenido Sr. Usuario!</p>
-        							<p class="header-link"><a href="#">Iniciar Seccion</a>&nbsp;o&nbsp;<a href="register-account.html">Crear Cuenta</a></p>
+        							<p class="header-link"><a href="">Iniciar Seccion</a>&nbsp;o&nbsp;<a href="register-account.html">Crear Cuenta</a></p>
     							</div><!-- End .pull-right -->
     						</div><!-- End .header-top-right -->
     					</div><!-- End .col-md-12 -->
@@ -316,7 +139,7 @@
 
 						<div class="col-md-5 col-sm-5 col-xs-12 logo-container">
 							<h1 class="logo clearfix">
-								<span>Responsive eCommerce Template</span>
+								<span>EXPOSOFTWARE 2015</span>
 								<a href="index-2.html" title="Venedor eCommerce Template"><img src="images/logo.png" alt="Venedor Commerce Template" width="238" height="76"></a>
 							</h1>
 						</div><!-- End .col-md-5 -->
@@ -535,12 +358,11 @@
     				</div><!-- End .row -->
     			</div><!-- End .container -->
     				
-    			</div><!-- End #nav -->			
-			</div><!-- End #inner-header -->
+    			</div><!-- End #nav -->
+    		</div><!-- End #inner-header -->
     	</header><!-- End #header -->
-        
-		
-		<section id="content">
+
+        <section id="content">
         	
         	<div id="slider-sequence" class="homeslider">
         		<div class="sequence-prev"></div><!-- End sequence-prev-->
@@ -2138,7 +1960,6 @@
         
         </section><!-- End #content -->
         
-		
         <footer id="footer">
         	
             <div id="twitterfeed-container">
@@ -2243,9 +2064,7 @@
         	
         </footer><!-- End #footer -->
     </div><!-- End #wrapper -->
-        
-		
-		<a href="#" id="scroll-top" title="Scroll to Top"><i class="fa fa-angle-up"></i></a><!-- End #scroll-top -->
+        <a href="#" id="scroll-top" title="Scroll to Top"><i class="fa fa-angle-up"></i></a><!-- End #scroll-top -->
 	<!-- END -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
